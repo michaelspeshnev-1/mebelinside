@@ -1,3 +1,0 @@
-# Опциональный модуль: поиск лица и вертикальное кадрирование.
-# Ставится отдельно: .venv/bin/pip install -r requirements-optional.txt
-opencv-python-headless==4.14.0.94
