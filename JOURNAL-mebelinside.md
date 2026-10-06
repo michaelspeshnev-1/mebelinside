@@ -5,6 +5,7 @@
 
 ---
 
+- **2026-10-06** — тексты главной и страницы «Кухни на заказ» (title/description/H1, блоки HTML, FAQ + JSON-LD из одного источника, без цен на кухни), порядок заливки → [PAGES-glavnaya-i-kuhni-drafty.md](PAGES-glavnaya-i-kuhni-drafty.md)
 - **2026-10-06** — решения Михаила по SEO-ТЗ: B2B — все наши, мягкая мебель на второй план, детскую не показываем, год 2009 (ИП с 2006), заявки через мессенджеры; готов блок `site-blocks/blok-otpravit-foto.html` и черновики B2B/дизайнерам/кейса «Кабинет» → [PAGES-b2b-dizayn-drafty.md](PAGES-b2b-dizayn-drafty.md); `seo_audit.py` из облака не отработал (сайт закрыт сетью)
 - **2026-10-06** — ТЗ SEO+GEO+UX+лиды: этап 0 без доступа к сайту (egress закрыт) — аудит из проверенных отчётов, архитектура, список URL, приоритеты, SEO-ТЗ первой группы, скрипт живого аудита `tools/seo_audit.py`; позиций/трафика нет — нужны выгрузки Вебмастера/GSC/Метрики → [SEO-GEO-UX-etap0-audit-i-arhitektura.md](SEO-GEO-UX-etap0-audit-i-arhitektura.md)
 - **2026-10-06** — первый рилс r1 «Шкаф, где не надо искать вещи» (ролик 28.04.2026): сценарий с надписями, подписи для Instagram и бота, скрипт сборки `tools/make_reel.py` (проверен на тестовом видео) → [reels/r1-shkaf-pantograf.md](reels/r1-shkaf-pantograf.md)
