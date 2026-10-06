@@ -1,0 +1,6 @@
+# Основные Python-зависимости (точные версии).
+# Полный список со всеми вложенными пакетами: requirements.lock.txt
+faster-whisper==1.2.1
+ctranslate2==4.8.2
+pocketsphinx==5.1.1
+numpy==2.5.3

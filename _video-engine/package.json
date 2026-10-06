@@ -1,0 +1,30 @@
+{
+  "name": "mini-video-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Минимальный локальный AI-движок монтажа видео: ffprobe → аудио → транскрипция → план сцен → Remotion → FFmpeg → MP4",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "doctor": "node src/doctor.js",
+    "make-test-assets": "node src/make-test-assets.js",
+    "run": "node src/cli.js run",
+    "demo": "node src/cli.js demo",
+    "validate-plan": "node src/cli.js validate-plan",
+    "verify": "node src/verify-output.js",
+    "watch": "node src/watch.js",
+    "help": "node src/cli.js help",
+    "setup": "node scripts/setup.js"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.532",
+    "@remotion/cli": "4.0.532",
+    "@remotion/renderer": "4.0.532",
+    "ajv": "8.20.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.532"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "theme": "mebel-inside",
+  "format": "vertical",
+  "language": "auto",
+  "engine": "auto",
+  "model": "small",
+  "face": false,
+  "music": "auto",
+  "watchIntervalSec": 5
+}

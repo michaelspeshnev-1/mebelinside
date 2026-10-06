@@ -1,0 +1,19 @@
+{
+  "name": "mebel-inside",
+  "brand": {
+    "name": "Мебель Inside",
+    "site": "mebelinside.ru",
+    "phone": "+7 (928) 951-63-42",
+    "tagline": "Мебель на заказ · Пятигорск · с 2009 года"
+  },
+  "colors": { "background": "#1e2226", "accent": "#d2a85f", "text": "#ffffff" },
+  "safeZone": {
+    "landscape": { "top": 6, "bottom": 9, "side": 6 },
+    "vertical": { "top": 9, "bottom": 19, "side": 7 }
+  },
+  "audio": { "gainDb": -17, "thresholdDb": -28, "ratio": 8, "attackMs": 5, "releaseMs": 300 },
+  "cta": {
+    "title": "Рассчитаем вашу кухню",
+    "text": "Напишите или позвоните: подберём решение под ваше пространство"
+  }
+}

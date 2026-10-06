@@ -1,0 +1,11 @@
+{
+  "name": "default",
+  "brand": { "name": "", "site": "", "phone": "", "tagline": "" },
+  "colors": { "background": "#0b1226", "accent": "#ffd23f", "text": "#ffffff" },
+  "safeZone": {
+    "landscape": { "top": 6, "bottom": 9, "side": 6 },
+    "vertical": { "top": 9, "bottom": 19, "side": 7 }
+  },
+  "audio": { "gainDb": -17, "thresholdDb": -28, "ratio": 8, "attackMs": 5, "releaseMs": 300 },
+  "cta": { "title": "", "text": "" }
+}
