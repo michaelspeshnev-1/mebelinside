@@ -1,0 +1,51 @@
+<!-- CreativeWork для кейса /proekty/<кейс>/ + BreadcrumbList в одном @graph.
+     Заменить {{…}} из текста кейса (PROEKTY-keysy-teksty.md). Готовый заполненный пример — там же, раздел 7.
+     Не ставить: aggregateRating, review, offers/цены, dateCreated (пока год не подтверждён), адрес объекта (только город).
+     image — реальные URL фото ПОСЛЕ заливки (ссылки должны открываться). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "https://mebelinside.ru/proekty/{{SLUG}}/#project",
+      "name": "{{H1_КЕЙСА}}",
+      "headline": "{{H1_КЕЙСА}}",
+      "description": "{{1–2 предложения: что сделали, где (город), ключевые решения}}",
+      "url": "https://mebelinside.ru/proekty/{{SLUG}}/",
+      "inLanguage": "ru",
+      "genre": "Реализованный проект",
+      "about": {"@type": "Thing", "name": "{{ТИП: Кухня на заказ / Гардеробная на заказ / …}}"},
+      "keywords": "{{3–5 ключей через запятую}}",
+      "locationCreated": {
+        "@type": "Place",
+        "address": {"@type": "PostalAddress", "addressLocality": "{{ГОРОД}}", "addressCountry": "RU"}
+      },
+      "creator": {"@id": "https://mebelinside.ru/#org"},
+      "image": [
+        "{{URL_ФОТО_1}}",
+        "{{URL_ФОТО_2}}",
+        "{{URL_ФОТО_3}}"
+      ],
+      "isPartOf": {"@type": "CollectionPage", "@id": "https://mebelinside.ru/proekty/#collection", "name": "Наши проекты", "url": "https://mebelinside.ru/proekty/"},
+      "breadcrumb": {"@id": "https://mebelinside.ru/proekty/{{SLUG}}/#breadcrumbs"}
+    },
+    {
+      "@type": "FurnitureStore",
+      "@id": "https://mebelinside.ru/#org",
+      "name": "Мебель Inside",
+      "url": "https://mebelinside.ru/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mebelinside.ru/proekty/{{SLUG}}/#breadcrumbs",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://mebelinside.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Проекты", "item": "https://mebelinside.ru/proekty/"},
+        {"@type": "ListItem", "position": 3, "name": "{{H1_КЕЙСА}}", "item": "https://mebelinside.ru/proekty/{{SLUG}}/"}
+      ]
+    }
+  ]
+}
+</script>
+<!-- Если итоговый адрес кейса окажется без завершающего слэша или с .html (настройки ЧПУ) — поменять во всех 6 местах. -->

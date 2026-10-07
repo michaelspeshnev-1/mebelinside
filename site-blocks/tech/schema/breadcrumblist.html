@@ -1,0 +1,15 @@
+<!-- BreadcrumbList — шаблон. Заменить {{…}}. Уровней столько, сколько в видимых крошках; последний = текущая страница.
+     Пример для материала: Главная → Материалы → Фасады МДФ в эмали.
+     Пример для кейса: Главная → Проекты → <название кейса> (лучше в одном @graph с creativework-keys.html). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "{{URL_СТРАНИЦЫ}}#breadcrumbs",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://mebelinside.ru/"},
+    {"@type": "ListItem", "position": 2, "name": "{{РАЗДЕЛ}}", "item": "{{URL_РАЗДЕЛА}}"},
+    {"@type": "ListItem", "position": 3, "name": "{{НАЗВАНИЕ_СТРАНИЦЫ}}", "item": "{{URL_СТРАНИЦЫ}}"}
+  ]
+}
+</script>

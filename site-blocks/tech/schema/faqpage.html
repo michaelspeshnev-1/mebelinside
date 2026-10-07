@@ -1,0 +1,30 @@
+<!-- FAQPage — обёртка. Вопросы и ответы копировать ДОСЛОВНО из видимого блока FAQ на этой же странице
+     (ответ — чистый текст, можно <a>, <b>, <br>, <p>, <ul>/<li>; без цен на кухни).
+     Пар «вопрос–ответ» — сколько на странице (обычно 4–8). Один FAQPage на страницу: если тема уже выводит
+     FAQPage (категории кухонь) — второй не добавлять. Для страниц, где FAQ уже есть в тексте с готовым JSON-LD
+     (MATERIALY-*, O-KOMPANII-*, PAGES-glavnaya-i-kuhni-drafty.md), брать оттуда, а не этот шаблон. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{URL_СТРАНИЦЫ}}#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "{{ВОПРОС_1}}",
+      "acceptedAnswer": {"@type": "Answer", "text": "{{ОТВЕТ_1}}"}
+    },
+    {
+      "@type": "Question",
+      "name": "{{ВОПРОС_2}}",
+      "acceptedAnswer": {"@type": "Answer", "text": "{{ОТВЕТ_2}}"}
+    },
+    {
+      "@type": "Question",
+      "name": "{{ВОПРОС_3}}",
+      "acceptedAnswer": {"@type": "Answer", "text": "{{ОТВЕТ_3}}"}
+    }
+  ]
+}
+</script>
+<!-- Кавычки внутри текста экранировать: \" или заменить на «ёлочки». -->
