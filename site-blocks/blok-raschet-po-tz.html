@@ -1,0 +1,24 @@
+<!-- Блок «Расчёт по ТЗ» (R21). Ставится на /b2b/, /b2b/ofisy/, /b2b/kafe-restorany-bary/, /b2b/magaziny/, /b2b/dizayneram/.
+     Поля: файл ТЗ + имя + телефон + компания (необязательно) + согласие на обработку данных.
+     Бэкенд: [?] агент «Сайт» — собрать через конструктор форм CS-Cart (страница/блок типа «Форма»), если в нём есть поле
+     «Файл»; письмо — на почту заявок [?: адрес]. Если поля «Файл» нет — форма без файла, а под ней кнопки мессенджеров
+     (site-blocks/blok-otpravit-foto.html): DWG/PDF удобнее присылать туда.
+     Цели Метрики: lead_tz_form (отправка формы) + существующие lead_photo_wa|max|tg|call на кнопках.
+     action, name полей и токены — заменить на те, что выдаст конструктор форм CS-Cart. -->
+<section class="mi-tz" id="miTz">
+  <h2>Расчёт по ТЗ</h2>
+  <p>Пришлите техническое задание, чертежи, дизайн-проект или фото помещения с размерами. Посмотрим состав, подберём материалы и ответим со сметой или списком вопросов к проекту.</p>
+  <form class="mi-tz-form" method="post" enctype="multipart/form-data" action="">
+    <label>Файл ТЗ или проекта<br>
+      <input type="file" name="tz_file" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.zip,.doc,.docx,.xls,.xlsx">
+    </label>
+    <small>PDF, DWG, DXF, изображения, спецификация в Word или Excel, архив ZIP. <!-- [?] лимит размера файла — по настройке сервера --></small>
+    <label>Имя<br><input type="text" name="name" required autocomplete="name"></label>
+    <label>Телефон<br><input type="tel" name="phone" required autocomplete="tel" placeholder="+7"></label>
+    <label>Компания <span>(необязательно)</span><br><input type="text" name="company" autocomplete="organization"></label>
+    <label class="mi-tz-consent"><input type="checkbox" name="consent" required> Согласен на обработку персональных данных <!-- [?] ссылка на политику конфиденциальности сайта --></label>
+    <button type="submit" class="mi-photo-btn">Отправить ТЗ на расчёт</button>
+  </form>
+  <p class="mi-tz-alt">Файл большой или удобнее в мессенджере — отправьте его в WhatsApp, MAX или Telegram, кнопки ниже. Телефон: <a href="tel:+79289516342">+7 928 951-63-42</a>.</p>
+</section>
+<!-- ниже — блок site-blocks/blok-otpravit-foto.html (кнопки мессенджеров), заголовок в нём для B2B заменить на «Пришлите ТЗ, чертежи или фото помещения» -->
