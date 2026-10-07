@@ -1,0 +1,65 @@
+<!-- FurnitureStore для «О компании» — /about-our-company.html.
+     Тот же блок, что в O-KOMPANII-otzyvy-teksty.md раздел 1 (там он уже в @graph с AboutPage и крошками —
+     если заливаете текст оттуда, берите ТОТ блок целиком, этот не нужен). Этот файл — отдельная копия для
+     случая, когда JSON-LD вставляют в макет страницы, а не в описание. Отличия: второй телефон; legalName и taxID (ИП, ИНН) убраны — им место на «Контактах»/в реквизитах, а не обязательно здесь.
+     Без aggregateRating/review/цен. Часы работы не ставим: они в JSON-LD главной, чтобы не разъехались.
+     [?] перед заливкой:
+       1) логотип https://mebelinside.ru/images/logos/2/mebel-inside-logo.png открывается (путь из O-KOMPANII, не проверен из облака);
+       2) второй телефон +7 903 444-07-81 актуален (источник — OLD-PROJECT-BRIEF.md, файл помечен «часть сведений устарела»;
+          в O-KOMPANII [?] п. 12 — чей это номер). Если нет — оставить только первый;
+       3) ссылки Яндекс Карт и 2ГИС открывают карточку «Мебель Inside»;
+       4) @id совпадает с главной (см. README.md, правило 1). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://mebelinside.ru/about-our-company.html#page",
+      "url": "https://mebelinside.ru/about-our-company.html",
+      "name": "О компании «Мебель Inside»",
+      "inLanguage": "ru",
+      "about": {"@id": "https://mebelinside.ru/#org"},
+      "mainEntity": {"@id": "https://mebelinside.ru/#org"},
+      "breadcrumb": {"@id": "https://mebelinside.ru/about-our-company.html#breadcrumbs"}
+    },
+    {
+      "@type": "FurnitureStore",
+      "@id": "https://mebelinside.ru/#org",
+      "name": "Мебель Inside",
+      "alternateName": "Mebel Inside",
+      "url": "https://mebelinside.ru/",
+      "logo": "https://mebelinside.ru/images/logos/2/mebel-inside-logo.png",
+      "image": "https://mebelinside.ru/images/logos/2/mebel-inside-logo.png",
+      "foundingDate": "2009",
+      "description": "Мебель на заказ в Пятигорске: собственный цех с 2009 года, более 1000 выполненных заказов. ЧПУ-раскрой ЛДСП, присадка, кромка ПВХ, обработка акрилового камня и HPL-пластика, монтаж своими мастерами. Гарантия 2 года по договору.",
+      "telephone": ["+7 928 951-63-42", "+7 903 444-07-81"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Кисловодское шоссе, 22, ТЦ «Пазл», 2 этаж",
+        "addressLocality": "Пятигорск",
+        "addressRegion": "Ставропольский край",
+        "addressCountry": "RU"
+      },
+      "areaServed": ["Пятигорск", "Ессентуки", "Кисловодск", "Железноводск", "Минеральные Воды", "Лермонтов", "Георгиевск"],
+      "sameAs": [
+        "https://yandex.ru/maps/org/insayd/127963155789/",
+        "https://2gis.ru/pyatigorsk/firm/12526164744606415",
+        "https://vk.com/mebelinside",
+        "https://t.me/mebel_inside",
+        "https://ok.ru/mebelinside",
+        "https://dzen.ru/mebelinside"
+      ],
+      "knowsAbout": ["кухни на заказ", "шкафы-купе", "гардеробные", "ЧПУ-раскрой ЛДСП", "кромкование ПВХ", "столешницы из акрилового камня", "HPL-пластик"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mebelinside.ru/about-our-company.html#breadcrumbs",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://mebelinside.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "О компании", "item": "https://mebelinside.ru/about-our-company.html"}
+      ]
+    }
+  ]
+}
+</script>
