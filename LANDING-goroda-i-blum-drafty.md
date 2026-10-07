@@ -31,7 +31,6 @@
 <li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/kuhni-iz-laminirovannogo-dsp-kromka-pvh/">Кухни из ЛДСП</a></li>
 <li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/kuhni-s-fasadami-mdf-plastik/">Кухни из пластика</a></li>
 <li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/kuhni-iz-massiva-dereva/">Кухни из массива дерева</a></li>
-<li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/plastik-v-alyuminievom-profile/">Кухни с алюминиевой рамкой</a></li>
 <li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/kuhnya-s-barnoy-stoykoy/">Кухни с барной стойкой и островом</a></li>
 </ul>
 
@@ -84,7 +83,6 @@
 <li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/kuhni-iz-laminirovannogo-dsp-kromka-pvh/">Кухни из ЛДСП</a></li>
 <li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/kuhni-s-fasadami-mdf-plastik/">Кухни из пластика</a></li>
 <li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/kuhni-iz-massiva-dereva/">Кухни из массива дерева</a></li>
-<li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/plastik-v-alyuminievom-profile/">Кухни с алюминиевой рамкой</a></li>
 <li><a href="https://mebelinside.ru/mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/kuhnya-s-barnoy-stoykoy/">Кухни с барной стойкой и островом</a></li>
 </ul>
 

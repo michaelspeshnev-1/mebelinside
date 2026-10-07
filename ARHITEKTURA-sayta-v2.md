@@ -74,12 +74,13 @@
 | `/kuhnya-v-stile-loft-s-panelyami-eterno.html`, `/kuhnya-v-stile-loft-cement-derevo.html` | объединить | перевести в кейсы `/proekty/…` или canonical на главную лофт | ⏸ трафик |
 | джапанди | не создавать | 1 товар, нет фото | решение 17.08 |
 | **Материалы кухонь** (категории уже есть) | | | |
-| `…/kuhni-s-fasadami-mdf-emal-patina/` | оставить, изменить | описание + ссылка на `/materialy/mdf-emal/` + проекты | |
-| `…/kuhni-s-fasadami-mdf-plenka-matovaya-glyancevaya-metallik/` | оставить, изменить | → `/materialy/mdf-plenka-pvh/` | |
-| `…/kuhni-s-fasadami-mdf-plastik/`, `…/plastik-v-alyuminievom-profile/` | оставить, изменить | → `/materialy/plastik/` | |
-| `…/kuhni-s-fasadami-cleaf/`, `…/agt-uv-lak/` | оставить, изменить | → `/materialy/cleaf/`, `/materialy/agt/` | |
-| `…/kuhni-iz-laminirovannogo-dsp-kromka-pvh/`, `…/kuhni-iz-massiva-dereva/` | оставить, изменить | → `/materialy/ldsp/`, `/materialy/massiv/` | |
-| `/kuhni-shpon/` | ⏸ | 0–мало товаров: наполнить или 301 на `/materialy/shpon/` | R33 |
+| `…/kuhni-s-fasadami-mdf-emal-patina/` | оставить, изменить | описание + ссылка на `/fasady-mdf-emal.html` + проекты | |
+| `…/kuhni-s-fasadami-mdf-plenka-matovaya-glyancevaya-metallik/` | оставить, изменить | → `/fasady-mdf-plenka.html` | |
+| `…/kuhni-s-fasadami-mdf-plastik/` | оставить, изменить | → `/fasady-plastik.html` | |
+| `…/plastik-v-alyuminievom-profile/` | 301 → `…/kuhni-s-fasadami-mdf-plastik/` | решение Михаила 07.10: алюминиевый профиль не делаем (острый угол), рамки — только для стекла | |
+| `…/kuhni-s-fasadami-cleaf/`, `…/agt-uv-lak/` | оставить, изменить | → `/fasady-cleaf.html`, `/fasady-agt.html` | |
+| `…/kuhni-iz-laminirovannogo-dsp-kromka-pvh/`, `…/kuhni-iz-massiva-dereva/` | оставить, изменить | → `/ldsp-dlya-mebeli.html`, `/fasady-massiv.html` | |
+| `/kuhni-shpon/` | ⏸ | 0–мало товаров: наполнить или 301 на `/fasady-shpon.html` | R33 |
 | `/kuhn/` | ⏸ | кривой title; скорее 301 на посадочную | R33 |
 | **Планировки** | | | |
 | `…/kuhnya-s-barnoy-stoykoy/` | оставить | есть категория | |
@@ -126,7 +127,9 @@
 | `/proekty/obekt-<город>-<тема>/` | создать (новый тип) | **«Объект целиком»** — дизайнерский проект от кухни до инсталляции (кухня, шкафы, прихожая, санузел, ТВ-зона…): одна страница-история объекта + ссылки на кейсы по помещениям; фильтр «Объект целиком» в `/proekty/` | идея Михаила 07.10; ⏸ выбрать объект, фото, согласие |
 | `/proekty/<кейс>/` | создать | шаблон кейса; из готового: гардеробная Пятигорск (k1), кухня Горячеводск (k2), прихожая по проекту дизайнера (k4), кабинет (r2) | согласие клиентов, без адресов |
 | `/materialy/` | изменить → хаб | ~8800 слов декоров свернуть в справочник; сверху — плитки материалов; единая шапка | R28, R29 |
-| `/materialy/mdf-emal/`, `/mdf-plenka-pvh/`, `/plastik/`, `/agt/`, `/cleaf/`, `/ldsp/`, `/shpon/`, `/massiv/`, `/akrilovyy-kamen-hpl/` | создать | что это · плюсы/минусы · где ставим · уход · 3–6 проектов · бренды | тексты — облако; цены не писать |
+| `/fasady-mdf-emal.html`, `/mdf-plenka-pvh/`, `/plastik/`, `/agt/`, `/cleaf/`, `/ldsp/`, `/shpon/`, `/massiv/`, `/akrilovyy-kamen-hpl/` | создать | что это · плюсы/минусы · где ставим · уход · 3–6 проектов · бренды | тексты — облако; цены не писать |
+| `/wilsonart.html` | снять с сайта (бренд убрать из подвала/логотипов), 301 → `/fasady-plastik.html` | решение 07.10: санкции, не используем | |
+| `/agt.html` | создать | AGT часто спрашивают; текст — `MATERIALY-stranitsy-teksty.md` раздел 3а | |
 | `/blum.html`, `/hettich.html`, `/arpa.html`, `/egger.html`, `/renner.html`, `/makmart.html`, `/boyard.html`, `/evogloss.html` и др. | оставить | ссылки на них из материалов и кейсов (сейчас только из подвала) | |
 | `/wood/` | изменить | единая шапка/подвал | R29 |
 
@@ -192,7 +195,7 @@ Telegram · ВК · MAX · ОК · Дзен · Instagram, банки расср�
 |---|---|---|
 | 1 | Кухни неоклассика → МДФ эмаль/патина (материал) → кейс «Кухня каппучино» → похожие: 3 кейса неоклассика/классика → «Отправить фото» | «фасады МДФ в эмали с патиной», «кухня каппучино в неоклассике» |
 | 2 | Посадочная кухонь → «Кухни в Ессентуках» → кейс из Ессентуков → «Сколько стоит кухня» → «Отправить фото» | «кухни на заказ в Ессентуках» |
-| 3 | Материал «Пластик в алюм. профиле» (`/materialy/plastik/`) → категория кухонь с этим материалом → кейс → бренд (Arpa/Evogloss) → CTA | «пластик Arpa», «AGT от 30 дней» |
+| 3 | Материал «Пластик в алюм. профиле» (`/fasady-plastik.html`) → категория кухонь с этим материалом → кейс → бренд (Arpa/Evogloss) → CTA | «пластик Arpa», «AGT от 30 дней» |
 | 4 | Кухни с Blum → `/blum.html` → кейсы с Blum (только где Blum назван прямо) → статья «Что проверить при приёмке» → CTA | «фурнитура Blum» |
 | 5 | B2B хаб → «Офисы и кабинеты» → кейс «Кабинет руководителя» → материал (шпон/МДФ) → «Расчёт по ТЗ» | «кабинет руководителя на заказ» |
 | 6 | Дизайнерам → кейс «Прихожая по проекту дизайнера» → материалы → форма «Расчёт по ТЗ» | «работаем по проектам дизайнеров» |
