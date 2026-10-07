@@ -1,0 +1,94 @@
+# ============================================================================
+# sitemap.xml — какие URL должны появиться (техпакет A, 07.10.2026)
+#
+# ПРАВИЛО: в sitemap — только адрес, который УЖЕ отдаёт 200, без noindex и с canonical на себя.
+# Страница ещё не создана → её строку пропустить и добавить в день создания.
+# Адреса ниже — ПЛАНОВЫЕ, из текстов в репозитории. Итоговый адрес в CS-Cart зависит от настроек ЧПУ
+# (страница может получить `/x/` или `/x.html`) — в sitemap ставить ФАКТИЧЕСКИЙ адрес, проверенный в браузере. [?]
+#
+# Как в CS-Cart (подробно — TECHPAKET-zalivka.md, шаг 3):
+#  sitemap.xml собирает модуль «XML-карта сайта» (Google sitemap): активные категории, товары и страницы
+#  попадают сами. Но страницы 81–83 (Ессентуки, Кисловодск, Blum) созданы 05.10 и в sitemap НЕ попали,
+#  а в sitemap 40 битых URL (аудит 30.09) — значит, файл не перегенерируется или модуль что-то исключает. [?]
+#  Проверить: Модули → «XML-карта сайта» → настройки (что включено: страницы/категории/товары, есть ли
+#  поле «дополнительные ссылки»), есть ли кнопка/cron перегенерации. После пересборки — сверить по этому списку.
+#  Если страницы так и не попадают — добавить их вручную в поле доп. ссылок модуля (если такое поле есть) [?].
+# ============================================================================
+
+
+# ---------- 1. СЕЙЧАС: страницы уже живые (200), но их нет в sitemap.xml ----------
+https://mebelinside.ru/kuhni-na-zakaz-essentuki.html
+https://mebelinside.ru/kuhni-na-zakaz-kislovodsk.html
+https://mebelinside.ru/kuhni-s-furnituroy-blum.html
+# по аудиту 14.08 нет в /sitemap.html (HTML-карта); [?] проверить, есть ли в sitemap.xml — если нет, добавить:
+https://mebelinside.ru/materialy/
+https://mebelinside.ru/b2b/
+https://mebelinside.ru/wood/
+https://mebelinside.ru/mebel-na-zakaz/
+
+
+# ---------- 2. Материалы (MATERIALY-stranitsy-teksty.md, MATERIALY-2-stranitsy-teksty.md) — после создания ----------
+# Хаб: если тексты встают в галерею /materialy/ — хаб = /materialy/ (строка выше). Если хаб делают отдельной
+# страницей CS-Cart — добавить её адрес:
+# https://mebelinside.ru/materialy-dlya-mebeli.html
+https://mebelinside.ru/fasady-mdf-emal.html
+https://mebelinside.ru/fasady-plastik.html
+https://mebelinside.ru/fasady-agt.html
+https://mebelinside.ru/ldsp-dlya-mebeli.html
+https://mebelinside.ru/agt.html
+https://mebelinside.ru/fasady-mdf-plenka.html
+https://mebelinside.ru/fasady-cleaf.html
+https://mebelinside.ru/fasady-shpon.html
+https://mebelinside.ru/fasady-massiv.html
+https://mebelinside.ru/stoleshnicy-akrilovyy-kamen-hpl.html
+
+
+# ---------- 3. Проекты (PROEKTY-keysy-teksty.md) — после создания и согласия клиентов ----------
+https://mebelinside.ru/proekty/
+https://mebelinside.ru/proekty/garderobnaya-s-pantografami-pyatigorsk/
+https://mebelinside.ru/proekty/kuhnya-goryachevodsk-balki-i-truby/
+https://mebelinside.ru/proekty/prihozhaya-po-proektu-dizaynera-pyatigorsk/
+https://mebelinside.ru/proekty/kabinet-shkaf-v-cvet-steny-pyatigorsk/
+https://mebelinside.ru/proekty/kuhnya-kappuchino-neoklassika/
+# Комбинации фильтра /proekty/?… — НЕ включать (noindex, ARHITEKTURA п. 4).
+
+
+# ---------- 4. О компании, отзывы, гарантия (O-KOMPANII-otzyvy-teksty.md) ----------
+# /about-our-company.html — существующая страница; [?] проверить, есть ли в sitemap.xml, если нет — добавить:
+https://mebelinside.ru/about-our-company.html
+# Новые — после создания (итог /otzyvy/ или /otzyvy.html — по ЧПУ [?]):
+https://mebelinside.ru/otzyvy/
+https://mebelinside.ru/garantiya-i-servis.html
+
+
+# ---------- 5. Архитектура v2 (ARHITEKTURA-sayta-v2.md) — только когда страница наполнена ----------
+# Стили (категории, SEO-kuhni-stili.md):
+https://mebelinside.ru/kuhni-klassicheskie/
+https://mebelinside.ru/kuhni-neoklassika/
+# Планировка (ARHITEKTURA п. 1.2, «проверить число» товаров):
+https://mebelinside.ru/kuhni-uglovye/
+# Форма:
+https://mebelinside.ru/otpravit-foto/
+# B2B (после фото и фактов, план итерации 2):
+https://mebelinside.ru/b2b/dizayneram/
+https://mebelinside.ru/b2b/ofisy/
+https://mebelinside.ru/b2b/kafe-restorany-bary/
+https://mebelinside.ru/b2b/magaziny/
+
+
+# ---------- НЕ добавлять / убрать из sitemap ----------
+# /contact.html.html — 301 на /contact.html
+# /mebel-dlya-doma-ru/kuhni/kuhni-na-zakaz-v-pyatigorske/plastik-v-alyuminievom-profile/ — 301
+# /wilsonart.html — 301
+# /dizayneram-i-arhitektoram.html — 301 (после создания /b2b/dizayneram/)
+# /kuhni-premialnye/ — пока нет 3+ проектов (noindex/скрыта)
+# /b2b/resepshn/, /b2b/gostinicy-sanatorii/ — пока нет объектов
+# любые URL с ?features_hash=, ?sort_by=, ?utm_ и т. п.
+# 40 битых URL из аудита 30.09 (список — PROGRESS-2026-09-30-brendy-alt-audit.md; файл sitemap_404.txt на ПК в %TEMP%)
+
+
+# ---------- После обновления ----------
+# 1. https://mebelinside.ru/sitemap.xml — открыть, найти каждую строку из раздела 1 (Ctrl+F).
+# 2. Вебмастер → Индексирование → Файлы Sitemap → отправить заново; GSC → Файлы Sitemap → отправить.
+# 3. IndexNow: новые URL — site-blocks/indexnow/README.md (ожидаем Bing 200, Яндекс 202).
+# 4. HTML-карту /sitemap.html дополнить новыми разделами (ARHITEKTURA п. 1.1).
