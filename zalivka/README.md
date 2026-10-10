@@ -78,6 +78,7 @@
 | [18c-garantiya](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/18c-garantiya.md) | Страница `/garantiya-i-servis.html` | п. 18, R30/R41 |
 | [19a-llms-txt](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/19a-llms-txt.md) | Файл `llms.txt` в корень сайта | п. 19 (после приёмки Главным) |
 | [19b-ai-otvety](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/19b-ai-otvety.md) | Блок ИИ-ответов: FAQ на 9 страниц | п. 19 (после приёмки PR агента SEO) |
+| [24-pinterest-doska](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/24-pinterest-doska.md) | Pinterest: создать доску «Мебель на заказ — Пятигорск, КМВ» | Михаил 10.10 |
 | [00a-menu-detskaya](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/00a-menu-detskaya.md) | Меню: «Школы и детские сады» последним в «Для бизнеса» | решение 08.10 |
 | [20-kalkulyator-kontakty-zamer](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/20-kalkulyator-kontakty-zamer.md) | 🔥 Калькулятор: убрать «бесплатный замер», кликабельные телефоны/WhatsApp/Telegram/MAX | Михаил 08.10 — «сохраняй» дан |
 | [21-pravki-po-otvetam-08-10](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/21-pravki-po-otvetam-08-10.md) | Правки на живом сайте по ответам 08.10: часы 10–18, срок массива 60–80, банки, «30–45», шпон/массив | ответы Михаила 08.10 |
