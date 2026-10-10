@@ -64,6 +64,9 @@
 | [16c-keys-kabinet](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16c-keys-kabinet.md) | Кейс: Кабинет со шкафом в цвет стены, Пятигорск | п. 16, R20 (согласие — да, решение 07.10 №20) |
 | [16d-keys-prihozhaya](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16d-keys-prihozhaya.md) | Кейс: Прихожая по проекту дизайнера, Пятигорск | п. 16, R20 (согласие — да, решение 07.10 №20) |
 | [16e-keys-kappuchino](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16e-keys-kappuchino.md) | Кейс: Кухня каппучино в стиле неоклассика | п. 16, R20 (согласие — да, решение 07.10 №20) |
+| [16g-keys-restoran-loft](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16g-keys-restoran-loft.md) | Кейс: Ресторан в стиле лофт: арочная перегородка и мебель санузла в одном цвете | п. 16, R20 (согласие — да, решение 07.10 №20) |
+| [16h-keys-pekarnya-kafe](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16h-keys-pekarnya-kafe.md) | Кейс: Пекарня-кафе: реечная стена с аркой | п. 16, R20 (согласие — да, решение 07.10 №20) |
+| [16i-keys-torgovoe-oborudovanie](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16i-keys-torgovoe-oborudovanie.md) | Кейс: Торговое оборудование: витрины и стеллаж-картотека с ящиками | п. 16, R20 (согласие — да, решение 07.10 №20) |
 | [16f-proekty-hub](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16f-proekty-hub.md) | Хаб «Проекты» `/proekty/` | п. 16, R20 |
 | [17a-b2b-hub](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/17a-b2b-hub.md) | Для бизнеса: `/b2b/` | п. 17, R21 |
 | [17b-b2b-ofisy](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/17b-b2b-ofisy.md) | Для бизнеса: `/b2b/ofisy/` | п. 17, R21 |
@@ -81,5 +84,6 @@
 | [22-meta-h1-audit](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/22-meta-h1-audit.md) | Аудит 08.10: H1 (главная, materialy, калькуляторы), «30–45 дней», `/hi-max.html` | R62, R27, R65 |
 | [22a-meta-brendy](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/22a-meta-brendy.md) | Аудит 08.10: Title/Description для страниц без мета (бренды, категории, расчёт) | R63 |
 | [22b-dubli-title-h1](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/22b-dubli-title-h1.md) | Аудит 08.10: дубли Title/H1 и 10 карточек «Кухня МДФ + пленка» | R64 |
+| [23-b2b-foto-keysy](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/23-b2b-foto-keysy.md) | Фото B2B-кейсов из Drive: отбор без вывесок, 1600 px, alt — в кейсы 16g–16i и страницы 17c/17d | B2B-кейсы 10.10 |
 
 Карточки собирает `tools/gen_zalivka.py` из исходных файлов (тексты копируются дословно). Правки текстов — в исходные файлы, потом `python3 tools/gen_zalivka.py`.

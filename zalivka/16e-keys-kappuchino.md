@@ -192,4 +192,4 @@ HTML вставлять в режиме «Исходный код» редакт
 
 `п. 16 — кейс `/proekty/kuhnya-kappuchino-neoklassika/`: <опубликован / скрыт — нужны фото>; убраны [?]: <…>`
 
-Дальше: [16f-proekty-hub.md](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16f-proekty-hub.md)
+Дальше: [16g-keys-restoran-loft.md](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16g-keys-restoran-loft.md)
