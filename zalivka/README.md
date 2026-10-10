@@ -78,5 +78,8 @@
 | [00a-menu-detskaya](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/00a-menu-detskaya.md) | Меню: «Школы и детские сады» последним в «Для бизнеса» | решение 08.10 |
 | [20-kalkulyator-kontakty-zamer](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/20-kalkulyator-kontakty-zamer.md) | 🔥 Калькулятор: убрать «бесплатный замер», кликабельные телефоны/WhatsApp/Telegram/MAX | Михаил 08.10 — «сохраняй» дан |
 | [21-pravki-po-otvetam-08-10](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/21-pravki-po-otvetam-08-10.md) | Правки на живом сайте по ответам 08.10: часы 10–18, срок массива 60–80, банки, «30–45», шпон/массив | ответы Михаила 08.10 |
+| [22-meta-h1-audit](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/22-meta-h1-audit.md) | Аудит 08.10: H1 (главная, materialy, калькуляторы), «30–45 дней», `/hi-max.html` | R62, R27, R65 |
+| [22a-meta-brendy](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/22a-meta-brendy.md) | Аудит 08.10: Title/Description для страниц без мета (бренды, категории, расчёт) | R63 |
+| [22b-dubli-title-h1](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/22b-dubli-title-h1.md) | Аудит 08.10: дубли Title/H1 и 10 карточек «Кухня МДФ + пленка» | R64 |
 
 Карточки собирает `tools/gen_zalivka.py` из исходных файлов (тексты копируются дословно). Правки текстов — в исходные файлы, потом `python3 tools/gen_zalivka.py`.
