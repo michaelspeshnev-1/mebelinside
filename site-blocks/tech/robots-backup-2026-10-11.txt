@@ -1,0 +1,154 @@
+Sitemap: https://mebelinside.ru/sitemap-extra.txt
+User-agent: Yandex 
+Disallow: /images/thumbnails/ 
+Disallow: /cgi-bin/ 
+Disallow: /app/ 
+Disallow: /design/ 
+Disallow: /var/ 
+Disallow: /store_closed.html 
+Disallow: /init.php 
+Disallow: /php.ini 
+Disallow: /prepare.php 
+Disallow: /sendmail/ 
+Disallow: /*sl= 
+Disallow: /*currency= 
+Disallow: /*sort_by= 
+Disallow: /*layout= 
+Disallow: /*variant_id= 
+Disallow: /*display= 
+Disallow: /*page= 
+Disallow: /*return_url= 
+Disallow: /*more_filters= 
+Disallow: /*features_hash= 
+Disallow: /*subcats= 
+Disallow: /*?sef_rewrite= 
+Disallow: /*tags.summary* 
+Disallow: /*wishlist.view* 
+Disallow: /login? 
+Disallow: /profiles-update 
+Disallow: /index.php?dispatch=products.quick_view 
+Disallow: /index.php?dispatch=auth.recover_password 
+Disallow: /index.php?dispatch=events.search 
+Disallow: /index.php?dispatch=auth.login_form 
+Disallow: /index.php?dispatch=gift_certificates.add 
+Disallow: /index.php?dispatch=news.list 
+Disallow: /index.php?dispatch=orders.search 
+Disallow: /index.php?dispatch=profiles.update 
+Disallow: /index.php?dispatch=profiles.add 
+Disallow: /index.php?dispatch=checkout.cart 
+Host: mebelinside.ru  
+
+User-agent: * 
+Disallow: /images/thumbnails/ 
+Disallow: /cgi-bin/ 
+Disallow: /app/ 
+Disallow: /design/ 
+Disallow: /var/ 
+Disallow: /store_closed.html 
+Disallow: /init.php 
+Disallow: /php.ini 
+Disallow: /prepare.php 
+Disallow: /sendmail/ 
+Disallow: /*sl= 
+Disallow: /*currency= 
+Disallow: /*sort_by= 
+Disallow: /*layout= 
+Disallow: /*variant_id= 
+Disallow: /*display= 
+Disallow: /*page= 
+Disallow: /*return_url= 
+Disallow: /*more_filters= 
+Disallow: /*features_hash= 
+Disallow: /*subcats= 
+Disallow: /*?sef_rewrite= 
+Disallow: /*tags.summary* 
+Disallow: /*wishlist.view* 
+Disallow: /login? 
+Disallow: /profiles-update 
+Disallow: /index.php?dispatch=products.quick_view 
+Disallow: /index.php?dispatch=auth.recover_password 
+Disallow: /index.php?dispatch=events.search 
+Disallow: /index.php?dispatch=auth.login_form 
+Disallow: /index.php?dispatch=gift_certificates.add 
+Disallow: /index.php?dispatch=news.list 
+Disallow: /index.php?dispatch=orders.search 
+Disallow: /index.php?dispatch=profiles.update 
+Disallow: /index.php?dispatch=profiles.add 
+Disallow: /index.php?dispatch=checkout.cart 
+Sitemap: https://mebelinside.ru/sitemap.xml
+
+# --- AI crawlers (GEO) ---
+User-agent: GPTBot
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: YandexAdditional
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+
+User-agent: YandexAdditionalBot
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+User-agent: Claude-User
+Allow: /
+Disallow: /index.php?dispatch=checkout*
+Disallow: /admin*
+
+# Bytespider (TikTok) robots.txt игнорирует — резать дополнительно на уровне сервера
+User-agent: Bytespider
+Disallow: /
