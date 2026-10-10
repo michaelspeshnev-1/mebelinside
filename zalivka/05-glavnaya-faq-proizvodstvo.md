@@ -55,8 +55,10 @@ HTML вставлять в режиме «Исходный код» редакт
     Очистить кеш: Администрирование → Хранилище → Очистить кеш.
 -->
 <style>
-.mi-prod{max-width:1100px;margin:40px auto;padding:32px 16px;color:#2d2a26;font-size:16px;line-height:1.6;box-sizing:border-box}
-.mi-prod *{box-sizing:border-box}
+/* 08.10: старые JS-блоки производства и банков скрыты (рисует head_scripts.post.tpl); откат — убрать эту строку */
+.mi-prod,.mi-banks{display:none!important}
+.mi-prodx{max-width:1100px;margin:40px auto;padding:32px 16px;color:#2d2a26;font-size:16px;line-height:1.6;box-sizing:border-box}
+.mi-prodx *{box-sizing:border-box}
 .mi-prod__title{margin:0 0 8px;font-size:28px;line-height:1.25}
 .mi-prod__lead{margin:0 0 24px;max-width:760px}
 .mi-prod__facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 28px;padding:0;list-style:none}
@@ -71,16 +73,16 @@ HTML вставлять в режиме «Исходный код» редакт
 .mi-prod__links{margin:24px 0 0}
 .mi-prod__btn{display:inline-block;margin:0 10px 10px 0;padding:12px 22px;border-radius:6px;background:#2d2a26;color:#fff!important;text-decoration:none;font-weight:600}
 .mi-prod__btn--ghost{background:transparent;color:#2d2a26!important;border:2px solid #2d2a26}
-.mi-banks{max-width:1100px;margin:0 auto 40px;padding:18px 16px;border:1px solid #e6e0d4;border-radius:8px;background:#fbf9f4;font-size:15px;line-height:1.5;color:#2d2a26;box-sizing:border-box}
+.mi-banksx{max-width:1100px;margin:0 auto 40px;padding:18px 16px;border:1px solid #e6e0d4;border-radius:8px;background:#fbf9f4;font-size:15px;line-height:1.5;color:#2d2a26;box-sizing:border-box}
 .mi-banks__title{margin:0 0 8px;font-size:17px;font-weight:600}
 .mi-banks__list{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;padding:0;list-style:none}
 .mi-banks__list li{padding:6px 12px;border-radius:20px;background:#fff;border:1px solid #e6e0d4;white-space:nowrap}
-.mi-banks a{color:#15533f}
+.mi-banksx a{color:#15533f}
 .mi-banks__note{margin:0}
 @media(max-width:900px){.mi-prod__facts{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.mi-prod{margin:28px auto;padding:20px 16px}.mi-prod__title{font-size:23px}.mi-prod__cols{grid-template-columns:1fr;gap:20px}.mi-prod__num{font-size:24px}.mi-prod__btn{display:block;text-align:center;margin:0 0 10px}}
+@media(max-width:640px){.mi-prodx{margin:28px auto;padding:20px 16px}.mi-prod__title{font-size:23px}.mi-prod__cols{grid-template-columns:1fr;gap:20px}.mi-prod__num{font-size:24px}.mi-prod__btn{display:block;text-align:center;margin:0 0 10px}}
 </style>
-<section class="mi-prod" id="miProd">
+<section class="mi-prodx" id="miProd">
   <h2 class="mi-prod__title">Собственное производство</h2>
   <p class="mi-prod__lead"><b>Мебель Инсайд — фабрика корпусной мебели полного цикла в Пятигорске.</b> Проектируем, изготавливаем в своём цехе, доставляем и устанавливаем сами — без посредников и перепродажи.</p>
   <ul class="mi-prod__facts">
@@ -116,7 +118,7 @@ HTML вставлять в режиме «Исходный код» редакт
     <a class="mi-prod__btn mi-prod__btn--ghost" href="https://mebelinside.ru/materialy/">Материалы и декоры</a>
   </p>
 </section>
-<section class="mi-banks" id="miBanks">
+<section class="mi-banksx" id="miBanks">
   <p class="mi-banks__title">Рассрочка и кредит на мебель</p>
   <ul class="mi-banks__list">
     <li>ОТП Банк</li>
