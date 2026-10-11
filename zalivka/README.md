@@ -67,6 +67,8 @@
 | [16g-keys-restoran-loft](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16g-keys-restoran-loft.md) | Кейс: Ресторан в стиле лофт: арочная перегородка и мебель санузла в одном цвете | п. 16, R20 (согласие — да, решение 07.10 №20) |
 | [16h-keys-pekarnya-kafe](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16h-keys-pekarnya-kafe.md) | Кейс: Пекарня-кафе: реечная стена с аркой | п. 16, R20 (согласие — да, решение 07.10 №20) |
 | [16i-keys-torgovoe-oborudovanie](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16i-keys-torgovoe-oborudovanie.md) | Кейс: Торговое оборудование: витрины и стеллаж-картотека с ящиками | п. 16, R20 (согласие — да, решение 07.10 №20) |
+| [16j-keys-kuhnya-essentuki-nefrit](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16j-keys-kuhnya-essentuki-nefrit.md) | Кейс: Кухня в Ессентуках: «сумрачный нефрит» и витрина на торце | п. 16, R20 (согласие — да, решение 07.10 №20) |
+| [16k-keys-resepshn](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16k-keys-resepshn.md) | Кейс: Стойка ресепшн с двумя высотами (офис) и трибуна для актового зала | п. 16, R20 (согласие — да, решение 07.10 №20) |
 | [16f-proekty-hub](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/16f-proekty-hub.md) | Хаб «Проекты» `/proekty/` | п. 16, R20 |
 | [17a-b2b-hub](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/17a-b2b-hub.md) | Для бизнеса: `/b2b/` | п. 17, R21 |
 | [17b-b2b-ofisy](https://github.com/michaelspeshnev-1/mebelinside/blob/main/zalivka/17b-b2b-ofisy.md) | Для бизнеса: `/b2b/ofisy/` | п. 17, R21 |
