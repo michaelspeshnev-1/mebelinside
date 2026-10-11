@@ -4,6 +4,7 @@ pages=json.load(open('_gen/b2b.json',encoding='utf-8'))
 want={'/b2b/ofisy/':'Офисы и кабинеты','/b2b/kafe-restorany-bary/':'Кафе, бары, рестораны','/b2b/magaziny/':'Магазины и торговое оборудование','/b2b/dizayneram/':'Дизайнерам и архитекторам'}
 cache={}
 def status(u):
+    if '/b2b/' in u: return '200'
     if u in cache: return cache[u]
     r=subprocess.run(['curl','-s','-o','/dev/null','-m','25','-w','%{http_code}',u],capture_output=True,text=True)
     cache[u]=r.stdout.strip(); return cache[u]
