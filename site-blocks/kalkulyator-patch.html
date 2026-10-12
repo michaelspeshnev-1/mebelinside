@@ -10,6 +10,7 @@
     ['после бесплатного замера','после замера']
   ];
   function modal(){
+    try{if(window.miGoal)miGoal('quiz_cta',{page:location.pathname});}catch(e){}
     var d=document,old=d.getElementById('mi-cb');
     if(old){old.style.display='flex';return;}
     var max='';var m=d.querySelector('a[href*="max.ru"]');if(m)max=m.href;
@@ -43,6 +44,9 @@
       if(v!==t.nodeValue)t.nodeValue=v;
     });
     f.contentWindow.callback=modal;
+    [].forEach.call(doc.querySelectorAll('button.cta'),function(b){b.removeAttribute('onclick');b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();modal();},true);});
+    var started=false;
+    ['input','change','click'].forEach(function(ev){doc.addEventListener(ev,function(e){if(started)return;var t=e.target;if(ev==='click'&&!(t.closest&&t.closest('label, input, select, .tier, [data-tier]')))return;started=true;try{if(window.miGoal)miGoal('quiz_start',{page:location.pathname});}catch(x){}},true);});
     doc.body.setAttribute('data-mi-patched','1');
     return true;
   }
