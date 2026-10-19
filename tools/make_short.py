@@ -100,8 +100,16 @@ def main():
     ins += ["-loop", "1", "-framerate", "30", "-t", str(cta_d), "-i", str(tmp / "cta.png")]
     flt.append(f"[{n}:v]format=yuv420p,fade=t=in:st=0:d=0.4,setsar=1[cta]")
     flt.append("[main][cta]concat=n=2:v=1:a=0[v]")
-    ins += ["-f", "lavfi", "-t", str(total), "-i", "anullsrc=r=44100:cl=stereo"]
-    cmd = [FF, "-y", "-v", "error", *ins, "-filter_complex", ";".join(flt), "-map", "[v]", "-map", f"{n+1}:a",
+    music = s.get("music")
+    if music:
+        ins += ["-i", str(ROOT / music)]
+        flt.append(f"[{n+1}:a]atrim=0:{total},volume={s.get('music_vol', 0.5)},afade=t=in:st=0:d=0.6,"
+                   f"afade=t=out:st={total-1.5}:d=1.5,aformat=sample_rates=44100:channel_layouts=stereo[a]")
+        amap = "[a]"
+    else:
+        ins += ["-f", "lavfi", "-t", str(total), "-i", "anullsrc=r=44100:cl=stereo"]
+        amap = f"{n+1}:a"
+    cmd = [FF, "-y", "-v", "error", *ins, "-filter_complex", ";".join(flt), "-map", "[v]", "-map", amap,
            "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-pix_fmt", "yuv420p", "-r", "30",
            "-c:a", "aac", "-b:a", "96k", "-shortest", "-movflags", "+faststart", str(out)]
     subprocess.run(cmd, check=True)
