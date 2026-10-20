@@ -7,6 +7,8 @@ diff = ImageChops.difference(im, Image.new("RGB", im.size, bg)).convert("L").poi
 # 255 = объект; заливаем фон (0) от краёв значением 128
 for pt in [(0, 0), (im.width - 1, 0), (0, im.height - 1), (im.width - 1, im.height - 1), (im.width // 2, 0)]:
     if diff.getpixel(pt) == 0: ImageDraw.floodfill(diff, pt, 128)
+for pt in [(973, 903), (970, 880), (975, 920)]:  # просвет между рукой и телом
+    if diff.getpixel(pt) == 0: ImageDraw.floodfill(diff, pt, 128)
 alpha = diff.point(lambda v: 0 if v == 128 else 255)
 px = im.load(); ap = alpha.load()
 for y in range(1400, im.height):  # светлая тень у ног — убрать; ботинки тёмные
