@@ -33,13 +33,14 @@ def font(sz):
     try:f.set_variation_by_axes([800])
     except Exception:pass
     return f
+ROT=-5  # по краю фартука: низ идёт вниз вправо ~5°, ось тела ~3° по часовой
 def build(wid,cx,cy,url,out):
     t=tl.resize((int(wid*K),int(wid*K*tl.height/tl.width)),Image.LANCZOS)
     L=Image.new('RGBA',(800*K,800*K),(0,0,0,0));L.alpha_composite(t,(int(cx*K-t.width/2),int(cy*K-t.height/2)))
     if url:
         f=font(int(15*K));s='mebelinside.ru';dd=ImageDraw.Draw(L);tw=dd.textlength(s,font=f)
         dd.text((cx*K-tw/2,(cy+wid*0.21+14)*K),s,font=f,fill=(238,238,232,255))
-    L=L.rotate(3,resample=Image.BICUBIC,center=(cx*K,cy*K))
+    L=L.rotate(ROT,resample=Image.BICUBIC,center=(cx*K,cy*K))
     la=np.array(L).astype(float)
     # смещение по складкам фартука
     k=0.35
@@ -62,8 +63,6 @@ def build(wid,cx,cy,url,out):
     bgc=Image.new('RGBA',im.size,(241,235,221,255));bgc.alpha_composite(im);bgc=bgc.convert('RGB')
     bgc.resize((1000,1000),Image.LANCZOS).save(out.replace('.png','-preview.png'))
     bgc.crop((520,700,1000,1260)).save(out.replace('.png','-krop-apron.png'))
-p='media/mascot/3d/final2/'
-build(150,378,508,False,p+'insaid-3D-final2-logo-krupno.png')
-build(135,378,492,True,p+'insaid-3D-final2-logo-url.png')
-a=Image.open(p+'insaid-3D-final2-logo-krupno-preview.png');b=Image.open(p+'insaid-3D-final2-logo-url-preview.png')
-W=Image.new('RGB',(2040,1020),(241,235,221));W.paste(a,(10,10));W.paste(b,(1030,10));W.save(p+'collage-final2.png')
+import os
+p='media/mascot/3d/final3/'
+build(150,376,508,False,p+'insaid-3D-final3.png')
