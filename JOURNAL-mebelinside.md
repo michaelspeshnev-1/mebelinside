@@ -21,6 +21,8 @@
 
 ---
 
+- **2026-10-22** — Сайт/бренды: по слову Михаила залиты описания (HTML), title и meta у 12 премиальных брендов в характеристике «Бренд»: SMEG, Miele, Franke, Elica, Faber, Falmec (были) + созданы Küppersbusch, Gaggenau, Neff, Bosch, Liebherr, Blanco; тексты `zalivka/29`, логотипы с официальных сайтов лежат в `media/brands/` (источники — `ISTOCHNIKI.md`), но на сайт НЕ загружены (форма варианта с 70 строками подвисает, загрузка по одной — долго); проверено на живом сайте: страницы отдают 200, новый title и текст.
+
 - **2026-10-22** — Сайт: по слову Михаила удалены 8 пустых климатических вариантов бренда (AUX, BALLU, BONECO, CHIGO, DAIKIN, GREE, iRobot, MITSUBISHI; было 69 → стало 61; `/ballu.html` → 404; бэкап — `BACKUP-brendy-klimat-udaleny-2026-10-22.md`); MIDEA оставлен; в sitemap удалённые адреса убрать при пересборке. Дальше: описания премиальных брендов (SMEG, Küppersbusch, Miele, Gaggenau, Neff, Bosch, Liebherr, Franke, Blanco, Elica, Faber, Falmec).
 
 - **2026-10-21** — Сайт: по прямому «да» Михаила записан meta description у 14 вариантов бренда (характеристика «Бренд», feature_id=3: ASCOLI, AUX, BALLU, BONE CRUSHER, BONECO, CHIGO, DAIKIN, GREE, HAIER, Inside, iRobot, LEBERG, LOFRATELLI, MAYTAG; шаблон из `zalivka/22c`, для «Inside» — свой текст); прежние значения были пустые; после перезагрузки формы все 14 сохранились. Осталось: 13 брендов в других характеристиках и 45 карточек кухонь с шаблонными description.
