@@ -82,12 +82,13 @@ def cta_layer(path, cta):
 
 def main():
     spec_path = Path(sys.argv[1]); s = json.loads(spec_path.read_text(encoding="utf-8"))
-    out = ROOT / "media" / "shorts" / (spec_path.stem + ".mp4"); out.parent.mkdir(parents=True, exist_ok=True)
+    out = ROOT / "media" / "shorts" / s.get("outdir", "") / (spec_path.stem + ".mp4"); out.parent.mkdir(parents=True, exist_ok=True)
     tmp = Path(tempfile.mkdtemp(prefix="short_")); dur = s["dur"]; cta_d = 3.5; total = dur + cta_d
     tag_layer(tmp / "tag.png"); cta_layer(tmp / "cta.png", s["cta"])
-    ins = ["-ss", str(s["start"]), "-t", str(dur), "-i", s["src"],
+    speed = s.get("speed", 1)
+    ins = ["-ss", str(s["start"]), "-t", str(dur * speed), "-i", s["src"],
            "-loop", "1", "-framerate", "30", "-t", str(dur), "-i", str(tmp / "tag.png")]
-    flt = [f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,fps=30,"
+    flt = [f"[0:v]setpts=PTS/{speed},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,fps=30,"
            f"eq=contrast=1.06:saturation=1.08,format=yuv420p[v0]", "[v0][1:v]overlay=0:0[v1]"]
     last = "v1"; n = 2
     for i, t in enumerate(s["texts"]):
