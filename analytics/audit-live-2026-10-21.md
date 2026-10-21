@@ -1,0 +1,15 @@
+# Живой аудит mebelinside.ru, 21.10.2026 (788 URL из sitemap, fetch из браузера админа)
+- Коды ответа: все 200; canonical совпадает с адресом у всех.
+- Title: пусто — 0; дубли — 1 группа из 2 страниц: «Мебель для дома на заказ в Пятигорске — Мебель Inside» = `/mebel-dlya-doma-ru/` и `/mebel-dlya-doma.html` (отчёт Вебмастера «78 дублей» устарел — данные обходов до 03.10).
+- «30–45 дней»: 0 страниц.
+- H1 ≠ 1: `/mebel-dlya-doma-ru/mebel-dlya-spalni/krovati/` (2: «Кровати Inside»|«Кровати»), `/myagkaya-mebel/mebelnye-tkani/tkani/` (2), `/myagkaya-mebel/mebelnye-tkani/iskusstvennaya-kozha/` (2), гардеробная 2×2 в спальне (2), `/vozvrat.html` (2), `/contact.html` (2). Страниц без H1 нет.
+- Description пусто — 27 страниц бренд-вариантов (хаб «Бренды :: X»): vialona-cappe, oasis, haier, maytag, ascoli, miele, milardo, zanussi, gree, aux, mitsubishi, chigo, zerten, niagara, roda, daikin, leberg, akvafor, barer, ballu, boneco, winia, panasonic, irobot, bone-crusher, lofratelli, inside (.html).
+  Из них 14 лежат в характеристике «Бренд» (feature_id=3, variant_id): ASCOLI 223, AUX 479, BALLU 503, BONE CRUSHER 518, BONECO 511, CHIGO 482, DAIKIN 486, GREE 475, HAIER 155, Inside 821, iRobot 527, LEBERG 488, LOFRATELLI 529, MAYTAG 217. Остальные 13 — в других характеристиках (нужен поиск по вариантам). Прежние значения мета у всех — пусто (бэкап не нужен).
+- Description дублируется — 8 групп, 45 страниц (шаблонные описания карточек кухонь):
+  17 стр. «Создайте теплоту и уют в своем доме с нашей классической кухней из натурального дерева…» (`kuhnya-ru-5`, `kuhonnyy-garnitur-massiv-klassika-…`, …)
+  8 стр. «Погрузитесь в атмосферу уюта и тепла с нашей кухней в стиле кантри из массива…»
+  6 стр. «Откройте для себя современный стиль с нашей акриловой кухней на заказ…» (+ ещё 2 стр. с тем же текстом)
+  6 стр. «Подчеркните индивидуальность … кухней в стиле лофт…»
+  2+2+2: `kuhnya-mdf-plenka` / `-ru-16`; `divan-insayd-24` / `-24-ru`; `/kuzni-na-schakaz-pyatigorsk-i-kmv(.html|-ru.html)`
+  Полные списки URL — повторить аудит (`tools/seo_audit.py`) или выгрузка CSV из Вебмастера (сейчас недоступна).
+- Для уникализации описаний 45 карточек нужен текст по каждой кухне (материал/цвет/стиль из карточки) — писать в админке по каждой карточке.
