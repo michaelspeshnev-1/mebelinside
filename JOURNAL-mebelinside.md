@@ -18,6 +18,8 @@
 
 ---
 
+- **2026-10-22** — Сайт: по слову Михаила удалены 8 пустых климатических вариантов бренда (AUX, BALLU, BONECO, CHIGO, DAIKIN, GREE, iRobot, MITSUBISHI; было 69 → стало 61; `/ballu.html` → 404; бэкап — `BACKUP-brendy-klimat-udaleny-2026-10-22.md`); MIDEA оставлен; в sitemap удалённые адреса убрать при пересборке. Дальше: описания премиальных брендов (SMEG, Küppersbusch, Miele, Gaggenau, Neff, Bosch, Liebherr, Franke, Blanco, Elica, Faber, Falmec).
+
 - **2026-10-21** — Сайт: по прямому «да» Михаила записан meta description у 14 вариантов бренда (характеристика «Бренд», feature_id=3: ASCOLI, AUX, BALLU, BONE CRUSHER, BONECO, CHIGO, DAIKIN, GREE, HAIER, Inside, iRobot, LEBERG, LOFRATELLI, MAYTAG; шаблон из `zalivka/22c`, для «Inside» — свой текст); прежние значения были пустые; после перезагрузки формы все 14 сохранились. Осталось: 13 брендов в других характеристиках и 45 карточек кухонь с шаблонными description.
 
 - **2026-10-19** — Metricool: 3 Shorts переведены из черновиков в запланированные посты с автопубликацией (по слову Михаила): 26.10, 28.10, 30.10 в 18:00 МСК на TikTok + YouTube Shorts + Instagram Reels (id 400453506 / 400453562 / 400453615)
