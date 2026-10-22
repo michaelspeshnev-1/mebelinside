@@ -195,7 +195,6 @@
   "title": "Кухня из массива за 45 дней?",
   "layout": "table",
   "rh": 84,
-  "bg": "_work/mat/up/fasady-massiv-2.jpg",
   "rows": [
    [
     "Массив",
@@ -243,7 +242,7 @@
   "layout": "list",
   "gap": 12,
   "tsize": 50,
-  "bg": "_work/mat/up/fasady-plastik-3.jpg",
+  "bg": "media/cards/bg/kuhnya-belaya-klassika-plita.jpg",
   "rows": [
    [
     "Откройте посудомойку и духовку — не упираются ли дверцы",
@@ -430,7 +429,6 @@
   "layout": "big",
   "gap": 22,
   "tsize": 54,
-  "bg": "_work/mat/up/fasady-massiv-3.jpg",
   "rows": [
    [
     "Дерево «дышит»: когда включили отопление, у филёнки может появиться тонкая полоска нетонированного края",
@@ -452,7 +450,6 @@
   "title": "ЛДСП: уязвимое место — кромка",
   "layout": "list",
   "gap": 16,
-  "bg": "_work/mat/up/ldsp-dlya-mebeli-1.jpg",
   "rows": [
    [
     "Поверхность воды не боится — боятся торцы",
@@ -619,7 +616,7 @@
    "Корпус — ЛДСП",
    "Фасады — МДФ"
   ],
-  "bg": "_work/mat/up/fasady-mdf-emal-3.jpg",
+  "bg": "media/cards/bg/kuhnya-seraya-sovremennaya.jpg",
   "rows": [
    [
     "Прочная, хорошо держит крепёж",
@@ -643,7 +640,7 @@
   "layout": "list",
   "gap": 14,
   "tsize": 50,
-  "bg": "_work/mat/up/stoleshnicy-akrilovyy-kamen-hpl-1.jpg",
+  "bg": "media/cards/bg/kuhnya-belaya-kamen.jpg",
   "rows": [
    [
     "Матовость эмали",
@@ -658,7 +655,7 @@
     "Совпадёт по тону, но не по рисунку один в один"
    ],
    [
-    "Вес массива",
+    "Фактура дерева",
     ""
    ]
   ],
@@ -667,17 +664,17 @@
  {
   "id": "2026-11-27-furnitura",
   "kicker": "Планирование",
-  "title": "Фурнитура для тяжёлых фасадов",
+  "title": "Как подбираем фурнитуру под нагрузку",
   "layout": "big",
   "gap": 26,
-  "bg": "_work/mat/up/fasady-massiv-1.jpg",
+  "bg": "media/cards/bg/kuhnya-belaya-ugol-dereviannaya-stoleshnitsa.jpg",
   "rows": [
    [
-    "Под массив советуем Blum или Hettich",
-    "У них запас по нагрузке: фасад из массива тяжелее, чем из МДФ или ЛДСП"
+    "Нагрузка зависит от размера и веса фасада",
+    "Blum или Hettich подбираем по расчёту нагрузки на вашем проекте"
    ],
    [
-    "Для остальных проектов — по бюджету",
+    "Где нагрузка обычная — по бюджету",
     "Blum, Hettich, MAKMART или Boyard"
    ],
    [
@@ -696,7 +693,6 @@
    "Массив",
    "Шпон"
   ],
-  "bg": "_work/mat/up/fasady-shpon-2.jpg",
   "rows": [
    [
     "Дерево по всей толщине",
